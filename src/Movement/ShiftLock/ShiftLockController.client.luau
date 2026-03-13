@@ -4,6 +4,8 @@ local RS = game:GetService("RunService")
 local UIS = game:GetService("UserInputService")
 local char = player.Character or player.CharacterAdded:Wait()
 
+
+
 local TI = TweenInfo.new(0.3, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut) -- TweenInfo for smooth transitions
 
 local renderconnection = nil --used to track the players camera
@@ -44,7 +46,7 @@ local function TweenOffSet(bool)
 		end)
 	else     -- Disable shift lock: unlock the mouse, reset camera offset back to default, and disconnect the render loop
 
-		--UIS.MouseIcon = "rbxassetid://16481167971"
+		UIS.MouseIcon = "rbxassetid://"
 		UIS.MouseBehavior = Enum.MouseBehavior.Default -- SO bassicly this lets u go back to free roam mouse mode after u exit shift lock. 
 
 		--Tween Our Camera Offset

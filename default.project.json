@@ -22,13 +22,16 @@
         }
       },
       "StarterCharacterScripts": {
-        "ShiftLockMovement": {
-          "$path": "src/ShiftLockMovement/ShiftLockController.client.luau"
+        "Movement": {
+          "$path": "src/Movement"
         }
       }
     },
 
     "Workspace": {
+      "Test": {
+        "$path": "src/test.server.luau"
+      },
       "$properties": {
         "FilteringEnabled": true
       },
